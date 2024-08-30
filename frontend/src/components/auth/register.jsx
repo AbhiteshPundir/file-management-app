@@ -29,7 +29,7 @@ const Register = () => {
 
   const handleRegister = async () => {
     try {
-      const response = await fetch("http://localhost:6500/register", {
+      const response = await fetch("https://invigorating-optimism-production.up.railway.app/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

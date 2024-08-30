@@ -29,7 +29,7 @@ const Login = () => {
 
   const handleLogin = async () => {
     try {
-      const response = await fetch("http://localhost:6500/login", {
+      const response = await fetch("https://invigorating-optimism-production.up.railway.app/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

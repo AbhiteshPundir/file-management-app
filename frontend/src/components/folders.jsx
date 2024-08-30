@@ -21,7 +21,7 @@ const Files = () => {
         return;
       }
 
-      const response = await fetch("http://localhost:6500/details", {
+      const response = await fetch("https://invigorating-optimism-production.up.railway.app/details", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -55,7 +55,7 @@ const Files = () => {
       }
 
       const response = await fetch(
-        `http://localhost:6500/upload/files?folder=${params.folderName}&username=${user.username}`,
+        `https://invigorating-optimism-production.up.railway.app/upload/files?folder=${params.folderName}&username=${user.username}`,
         {
           method: "GET",
           headers: {
@@ -174,7 +174,7 @@ const FileUpload = () => {
         return;
       }
 
-      const response = await fetch("http://localhost:6500/details", {
+      const response = await fetch("https://invigorating-optimism-production.up.railway.app/details", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -213,7 +213,7 @@ const FileUpload = () => {
         return;
       }
 
-      const response = await fetch("http://localhost:6500/upload", {
+      const response = await fetch("https://invigorating-optimism-production.up.railway.app/upload", {
         method: "POST",
         headers: {
           "x-auth-token": accessToken,

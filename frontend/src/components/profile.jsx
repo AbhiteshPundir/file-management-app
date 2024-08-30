@@ -14,7 +14,7 @@ const Profile = () => {
           return;
         }
 
-        const response = await fetch("http://localhost:6500/details", {
+        const response = await fetch("https://invigorating-optimism-production.up.railway.app/details", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",

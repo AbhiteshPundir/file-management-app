@@ -18,7 +18,7 @@ const FileManager = () => {
       }
       //console.log(accessToken);
       // console.log("fetching folders.....");
-      const response = await fetch("http://localhost:6500/folder", {
+      const response = await fetch("https://invigorating-optimism-production.up.railway.app/folder", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -48,7 +48,7 @@ const FileManager = () => {
         return;
       }
 
-      const response = await fetch("http://localhost:6500/details", {
+      const response = await fetch("https://invigorating-optimism-production.up.railway.app/details", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -78,7 +78,7 @@ const FileManager = () => {
     await fetchUserDetails();
 
     try {
-      const response = await fetch("http://localhost:6500/folder", {
+      const response = await fetch("https://invigorating-optimism-production.up.railway.app/folder", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
